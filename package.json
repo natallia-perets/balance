@@ -1,0 +1,46 @@
+{
+  "name": "balance",
+  "version": "1.0.0",
+  "description": "An app to help you in achieving wellness",
+  "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "html-webpack-plugin": "^3.2.0",
+    "koa": "^2.5.1",
+    "koa-cors": "0.0.16",
+    "koa-route": "^3.2.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "webpack": "^4.8.1"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1",
+    "react-hot-loader": "^4.1.2",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "scripts": {
+    "webserver": "node api/src/server.js",
+    "build": "node_modules/.bin/webpack",
+    "dev": "node_modules/.bin/webpack-dev-server --hot",
+    "test": "tbd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natallia-perets/balance.git"
+  },
+  "keywords": [
+    "koa",
+    "react",
+    "redux",
+    "webpack"
+  ],
+  "author": "Natallia Perats",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/natallia-perets/balance/issues"
+  },
+  "homepage": "https://github.com/natallia-perets/balance#readme"
+}
