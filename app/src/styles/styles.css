@@ -1,0 +1,24 @@
+/* Food */
+.foodItem {
+    background-color: cornsilk;
+    margin: 3px;
+}
+/* Meal */
+.mealItem {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+}
+/* DailyPlan */
+.dayPlan{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin: 5px;
+}
+
+/* WeekPlan */
+.weekPlan{
+    display: flex;
+    flex-wrap: wrap;
+}

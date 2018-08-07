@@ -4,28 +4,42 @@
   "description": "An app to help you in achieving wellness",
   "main": "index.js",
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.6.1",
     "html-webpack-plugin": "^3.2.0",
+    "immutable": "^3.8.2",
     "koa": "^2.5.1",
     "koa-cors": "0.0.16",
     "koa-route": "^3.2.0",
+    "koa-router": "^7.4.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.2.0",
     "webpack": "^4.8.1"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.2",
+    "chai-immutable": "^1.6.0",
+    "css-loader": "^1.0.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "mocha": "^5.1.1",
     "react-hot-loader": "^4.1.2",
+    "redux-devtools": "^3.4.1",
+    "style-loader": "^0.21.0",
     "webpack-cli": "^2.1.3",
     "webpack-dev-server": "^3.1.4"
   },
   "scripts": {
     "webserver": "node api/src/server.js",
-    "build": "node_modules/.bin/webpack",
+    "start": "npm run-script dev",
+    "build": "node_modules/.bin/webpack --mode production",
     "dev": "node_modules/.bin/webpack-dev-server --hot",
-    "test": "tbd"
+    "test": "mocha --compilers js:babel-core/register --recursive"
   },
   "repository": {
     "type": "git",
