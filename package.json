@@ -4,6 +4,7 @@
   "description": "An app to help you in achieving wellness",
   "main": "index.js",
   "dependencies": {
+    "@material-ui/core": "^1.4.3",
     "html-webpack-plugin": "^3.2.0",
     "immutable": "^3.8.2",
     "koa": "^2.5.1",
@@ -16,6 +17,7 @@
     "react-router": "^4.2.0",
     "redux": "^4.0.0",
     "redux-thunk": "^2.2.0",
+    "typeface-roboto": "0.0.54",
     "webpack": "^4.8.1"
   },
   "devDependencies": {
@@ -27,6 +29,7 @@
     "chai-immutable": "^1.6.0",
     "css-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
     "mocha": "^5.1.1",
     "react-hot-loader": "^4.1.2",
     "redux-devtools": "^3.4.1",

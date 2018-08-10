@@ -1,11 +1,21 @@
 import React from 'react'
 import DayPlan from "./DayPlan";
+import Grid from "@material-ui/core/Grid/Grid";
+import {withStyles} from "@material-ui/core/styles";
 
-function WeekPlan(props){
-  const dayPlans = props.dayPlans;
-
-  const dayPlanList = dayPlans.map(x => <DayPlan key={x.date} meals={x.meals} date={x.date}/>)
-  return (<section className="weekPlan">{dayPlanList}</section>)
+const styles = {
+  root: {
+    overflowX: 'auto'
+  }
 }
 
-export default WeekPlan;
+function WeekPlan(props){
+  const { dayPlans } = props;
+  const { classes } = props;
+
+  const dayPlanList = dayPlans.map(x => <DayPlan item key={x.date} meals={x.meals} date={x.date}/>)
+
+  return (<Grid container className={classes.root} wrap={"nowrap"}>{dayPlanList}</Grid>)
+}
+
+export default withStyles(styles)(WeekPlan);

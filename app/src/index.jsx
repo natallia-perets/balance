@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'typeface-roboto'
 
 import App from './components/App.jsx';
 
 import './styles/styles.css';
+
 
 main();
 

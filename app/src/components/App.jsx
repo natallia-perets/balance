@@ -1,6 +1,7 @@
 import React from 'react';
-import WeekPlan from './WeekPlan';
 import { hot } from "react-hot-loader";
+
+import Planning from "./Planning";
 
 const breakfastFoodItems = [
   { name : "mango", id : 1},
@@ -28,5 +29,8 @@ const dayPlan = {date:'8-1-2018', meals:meals}
 
 const dayPlans = [dayPlan, dayPlan, dayPlan, dayPlan, dayPlan, dayPlan, dayPlan]
 
-const App = () => <WeekPlan dayPlans={dayPlans}/>;
+const mealsMenu = {carbs: ["oats", "rice", "mango"], fats: ["avocado", "olive oil", "butter", "fish"], proteins: ["salmon", "chicken", "beef"]};
+
+const App = () => <Planning dayPlans={dayPlans} mealsMenu={mealsMenu}/>
+
 export default hot(module)(App)

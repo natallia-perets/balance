@@ -23,6 +23,10 @@ module.exports = {
             fallback: 'style-loader',
             use: ['css-loader']
           })
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        loader: "file-loader"
       }]
   },
   resolve: {
